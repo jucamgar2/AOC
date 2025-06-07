@@ -42,4 +42,8 @@ public class Position {
         return "{" + this.i + ", " + this.j +  ", " + this.value + "}";
     }
 
+    public Position clone() {
+        return new Position(this.i, this.j, this.value);
+    }
+
 }

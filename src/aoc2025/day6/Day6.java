@@ -5,6 +5,7 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Collectors;
 
 public class Day6 {
     
@@ -28,7 +29,7 @@ public class Day6 {
 
     public static Day6 getDay6Data(){
         List<Position> positions = new ArrayList<>();
-        try (BufferedReader br = new BufferedReader(new FileReader("Day6Data.txt"))) {
+        try (BufferedReader br = new BufferedReader(new FileReader("TestDay6.txt"))) {
             List<String> lines = br.lines().toList();
             for(int i = 0;i<lines.size();i++){
                 char[] line = lines.get(i).toCharArray();
@@ -53,5 +54,12 @@ public class Day6 {
             res+="\n";
         }
         return res;
+    }
+
+    public Day6 deepCopy() {
+        List<Position> newPositions = this.positions.stream()
+            .map(Position::clone)
+            .collect(Collectors.toList());
+        return new Day6(newPositions);
     }
 }
