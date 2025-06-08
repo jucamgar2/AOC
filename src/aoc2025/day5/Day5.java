@@ -9,16 +9,6 @@ import java.util.List;
 import java.util.Map;
 
 public class Day5 {
-
-    /*
-     * DATA EXAMPLE
-    47|53 -> Both must be in the same list and 47 must be before 53
-    97|13
-    97|61
-    97|47
-
-    75,47,61,53,29 -> List of updates in that order
-     */
     
     private List<List<Integer>> listOfUpdates;
 
