@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Day6Solution {
-    public static void day5Solution(){
+    public static void day6Solution(){
         Day6 input = Day6.getDay6Data();
         System.out.println("--------------------------PART1--------------------------");
         part1Solution(input);
@@ -136,7 +136,6 @@ public class Day6Solution {
         return (int) scapeway.getPositions().stream()
             .filter(position -> !position.getValue().equals("#"))
             .filter(position -> {
-                System.out.println(position);
                 Day6 mapToTest = input.deepCopy();
                 Position newObstacle = mapToTest.getPosition(position.getI(), position.getJ());
                 newObstacle.setValue("#");
