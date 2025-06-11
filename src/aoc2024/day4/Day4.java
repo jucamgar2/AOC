@@ -1,4 +1,4 @@
-package aoc2025.day4;
+package aoc2024.day4;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
@@ -6,7 +6,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
-import aoc2025.day6.Position;
+import aoc2024.day6.Position;
 
 public class Day4 {
  

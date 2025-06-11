@@ -1,4 +1,4 @@
-package aoc2025.day6;
+package aoc2024.day6;
 
 public enum Directions {
     RIGHT,

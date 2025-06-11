@@ -1,6 +1,6 @@
-package aoc2025.day4;
+package aoc2024.day4;
 
-import aoc2025.day6.Position;
+import aoc2024.day6.Position;
 
 public class Day4Solution {
     public static void day4Solution(){
