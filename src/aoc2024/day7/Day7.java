@@ -22,7 +22,7 @@ public class Day7 {
 
     public static Day7 getDay7Data(){
         Map<Long,List<Integer>> data = new HashMap<>();
-        try(BufferedReader br = new BufferedReader(new FileReader("Day7Data.txt"))){
+        try(BufferedReader br = new BufferedReader(new FileReader("inputs/2024/Day7Data.txt"))){
             br.lines().forEach(line->{
                 List<Integer> combinationNumbers = new ArrayList<>();
                 Long numberResult = Long.parseLong(line.split(":")[0]);

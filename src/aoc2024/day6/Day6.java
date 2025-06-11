@@ -29,7 +29,7 @@ public class Day6 {
 
     public static Day6 getDay6Data(){
         List<Position> positions = new ArrayList<>();
-        try (BufferedReader br = new BufferedReader(new FileReader("TestDay6.txt"))) {
+        try (BufferedReader br = new BufferedReader(new FileReader("inputs/2024/TestDay6.txt"))) {
             List<String> lines = br.lines().toList();
             for(int i = 0;i<lines.size();i++){
                 char[] line = lines.get(i).toCharArray();
