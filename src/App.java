@@ -1,9 +1,12 @@
+import aoc2025.day4.Day4Solution;
 import aoc2025.day5.Day5Solution;
 import aoc2025.day6.Day6Solution;
 import aoc2025.day7.Day7Solution;
 
 public class App {
     public static void main(String[] args) throws Exception {
+        System.out.println("--------------------------DAY 4--------------------------");
+        Day4Solution.day4Solution();
         System.out.println("--------------------------DAY 5--------------------------");
         Day5Solution.day5Solution();
         System.out.println("--------------------------DAY 6--------------------------");
