@@ -41,6 +41,7 @@ Thumbs.db
 bin/
 build/
 target/
+inputs/
 
 # User-specific files
 *.swp
