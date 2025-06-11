@@ -31,7 +31,7 @@ public class Day4 {
 
     public static Day4 getDay4Data(){
         List<Position> positions = new ArrayList<>();
-        try (BufferedReader br = new BufferedReader(new FileReader("inputs/2024/Day4Data.txt"))){
+        try (BufferedReader br = new BufferedReader(new FileReader("inputs/2024/TestDay4.txt"))){
             List<String> lines = br.lines().toList();
             for(int i = 0;i<lines.size();i++){
                 char[] line = lines.get(i).toCharArray();

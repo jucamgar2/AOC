@@ -51,7 +51,7 @@ public class Day5 {
         List<List<Integer>> listOfUpdates = new ArrayList<>();
         Map<Integer,List<Integer>> updateBeforeNumber = new HashMap<>();
         Map<Integer,List<Integer>> updateAfterNumber = new HashMap<>();
-        try (BufferedReader br = new BufferedReader(new FileReader("inputs/2024/Day5Data.txt"))) {
+        try (BufferedReader br = new BufferedReader(new FileReader("inputs/2024/TestDay5.txt"))) {
             br.lines().forEach(line-> {
                 if(line.length()>2&&line.charAt(2)=='|'){
                     processUpdateOrder(line, updateBeforeNumber, updateAfterNumber);
