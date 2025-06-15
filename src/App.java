@@ -4,6 +4,7 @@ import aoc2024.day4.Day4Solution;
 import aoc2024.day5.Day5Solution;
 import aoc2024.day6.Day6Solution;
 import aoc2024.day7.Day7Solution;
+import aoc2024.day8.Day8Solution;
 
 public class App {
     public static void main(String[] args) throws Exception {
@@ -19,6 +20,8 @@ public class App {
         Day6Solution.day6Solution();
         System.out.println("--------------------------DAY 7--------------------------");
         Day7Solution.day7Solution();
+        System.out.println("--------------------------DAY 8--------------------------");
+        Day8Solution.day8Solution();
 
     }
 }
