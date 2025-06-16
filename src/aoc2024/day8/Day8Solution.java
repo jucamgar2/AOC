@@ -25,7 +25,6 @@ public class Day8Solution {
         Integer maxI = input.getPositions().stream().mapToInt(x->x.getI()).max().orElse(0);
         Integer maxJ = input.getPositions().stream().mapToInt(x->x.getJ()).max().orElse(0);
         input.frequencies.stream().map(freq->input.getAllAntennasByFrecuency(freq)).forEach(list->generateAntinodesByFrequence(list, antiNodeMap,maxI, maxJ,isPart2));
-        System.out.println(antiNodeMap);
         return antiNodeMap.positions.stream().filter(x->x.getValue().equals("#")).count();
     }
 
