@@ -36,7 +36,7 @@ public class Day12 {
     public static Day12 getDay12Data(){
         List<Position> positions = new ArrayList<>();
         Set<String> flowerTypes = new HashSet<>();
-        try (BufferedReader br = new BufferedReader(new FileReader("inputs/2024/Day12Data.txt"))) {
+        try (BufferedReader br = new BufferedReader(new FileReader("inputs/2024/TestDay12.txt"))) {
             List<String> lines = br.lines().toList();
             for(int i = 0;i<lines.size();i++){
                 char[] line = lines.get(i).toCharArray();
