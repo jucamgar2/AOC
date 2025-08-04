@@ -4,6 +4,7 @@ import aoc2024.day11.Day11Solution;
 import aoc2024.day12.Day12Solution;
 import aoc2024.day13.Day13Solution;
 import aoc2024.day14.Day14Solution;
+import aoc2024.day15.Day15Solution;
 import aoc2024.day2.Day2Solution;
 import aoc2024.day3.Day3Solution;
 import aoc2024.day4.Day4Solution;
@@ -43,5 +44,7 @@ public class App {
         Day13Solution.day13Solution();
         System.out.println("--------------------------DAY14--------------------------");
         Day14Solution.day14Solution();
+        System.out.println("--------------------------DAY15--------------------------");
+        Day15Solution.day15Solution();
     }
 }
