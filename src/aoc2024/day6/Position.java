@@ -1,5 +1,7 @@
 package aoc2024.day6;
 
+import java.util.Objects;
+
 public class Position {
 
     private Integer i;
@@ -44,6 +46,19 @@ public class Position {
 
     public Position clone() {
         return new Position(this.i, this.j, this.value);
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Position position = (Position) o;
+        return this.i == position.i && this.j == position.j;
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(i, j);
     }
 
 }
