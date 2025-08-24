@@ -112,7 +112,6 @@ public class Day18Solution {
         Position start = input.getPosition(0, 0);
         Position end = input.getEndPosition();
         for(int indexMemoryFall = memoryFallStart;continueFalling;indexMemoryFall++){
-            System.out.println(indexMemoryFall);
             Position byteToFall = input.getBytesToFall().get(indexMemoryFall);
             input.getPosition(byteToFall.getI(), byteToFall.getJ()).setValue("#");
             if(getShortestPath(input, start, end).size()== 0){

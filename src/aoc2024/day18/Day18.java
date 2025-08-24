@@ -40,7 +40,7 @@ public class Day18 {
     public static Day18 getDay18Data(){
         List<Position> grid = new ArrayList<>();
         List<Position> bytesToFall = new ArrayList<>();
-        try(BufferedReader br = new BufferedReader(new FileReader("inputs/2024/Day18Data.txt"))) {
+        try(BufferedReader br = new BufferedReader(new FileReader("inputs/2024/TestDay18.txt"))) {
             br.lines().forEach(line->{
                 String[] pos = line.split(",");
                 Position p = new Position(Integer.parseInt(pos[0]), Integer.parseInt(pos[1]), null);
