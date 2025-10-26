@@ -1,18 +1,17 @@
-## Getting Started
+## AOC
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+Welcome to my Advent of code solutions repository
 
-## Folder Structure
+### Description
 
-The workspace contains two folders by default, where:
+In this repository I'm going to post my solutions to solve all the [Advent of code](https://adventofcode.com) problems for every year
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+### Progress
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+![Advent of Code 2024](https://img.shields.io/badge/Advent%20of%20Code-2024%20Completed-brightgreen?style=for-the-badge&logo=adventofcode)
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
 
-## Dependency Management
+![Advent of Code 2023](https://img.shields.io/badge/Advent%20of%20Code-2023%204Stars-purple?style=flat&logo=adventofcode)
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+
+![Advent of Code 2020](https://img.shields.io/badge/Advent%20of%20Code-2020%203Stars-blue?style=plastic&logo=adventofcode)
