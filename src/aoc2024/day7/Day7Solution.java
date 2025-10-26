@@ -12,6 +12,7 @@ public class Day7Solution {
         System.out.println("--------------------------PART1--------------------------");
         part1Solution(input);
         System.out.println("--------------------------PART2--------------------------");
+        part2Solution(input);
     }
 
     public static void part1Solution(Day7 input){
@@ -44,5 +45,38 @@ public class Day7Solution {
         });
         return combinationsRes;
     }
+
+    public static void part2Solution(Day7 input){
+        Long res = findFinalCalibrationResultWith3Operations(input);
+        System.out.println("SOLUCION: " + res);
+    }
+
+    public static Long findFinalCalibrationResultWith3Operations(Day7 input){
+        return input.getData().entrySet().stream().filter(line->findLineCalibrationResult3Ops(line)>0)
+                .mapToLong(line->line.getKey()).sum();
+    }
+
+    public static Long findLineCalibrationResult3Ops(Entry<Long, List<Integer>> line){
+        Long key = line.getKey();
+        List<Integer> value = line.getValue();
+        List<Long> combinations = new ArrayList<>();
+        combinations.add((long)value.get(0));
+        for(int i = 1; i<value.size();i++){
+            Integer number = value.get(i);
+            combinations = makeCombinations3Ops(combinations, number, key);
+        }
+        return combinations.stream().filter(result->result.equals(key)).count();
+    }
+
+    public static List<Long> makeCombinations3Ops(List<Long> combinations, Integer number,Long key){
+        List<Long> combinationsRes = new ArrayList<>();
+        combinations.forEach(x->{
+            combinationsRes.add(x*number);
+            combinationsRes.add(x+number);
+            combinationsRes.add(Long.parseLong(x.toString()+number.toString()));
+        });
+        return combinationsRes;
+    }
+
 
 }
