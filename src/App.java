@@ -1,4 +1,5 @@
 import aoc2020.day1.Day1Solution2020;
+import aoc2020.day2.Day2Solution2020;
 import aoc2024.day1.Day1Solution2024;
 import aoc2024.day10.Day10Solution2024;
 import aoc2024.day11.Day11Solution2024;
@@ -35,6 +36,8 @@ public class App {
         System.out.println("------------------------YEAR 2020------------------------");
         System.out.println("--------------------------DAY 1--------------------------");
         new Day1Solution2020().runDaySolution();
+        System.out.println("--------------------------DAY 2--------------------------");
+        new Day2Solution2020().runDaySolution();
     }
 
     public static void year2024(){
