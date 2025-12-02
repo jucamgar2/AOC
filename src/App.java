@@ -28,12 +28,14 @@ import aoc2024.day6.Day6Solution2024;
 import aoc2024.day7.Day7Solution2024;
 import aoc2024.day8.Day8Solution2024;
 import aoc2024.day9.Day9Solution2024;
+import aoc2025.day1.Day1Solution2025;
 
 public class App {
     public static void main(String[] args) throws Exception {
-        year2024();
-        year2020();
-        year2023();
+        year2025();
+        //year2024();
+        //year2023();
+        //year2020();
     }
 
     public static void year2020(){
@@ -106,5 +108,11 @@ public class App {
         new Day24Solution2024().runDaySolution();
         System.out.println("--------------------------DAY25--------------------------");
         new Day25Solution2024().runDaySolution();
+    }
+
+    public static void year2025(){
+        System.out.println("------------------------YEAR 2025------------------------");
+        System.out.println("--------------------------DAY 1--------------------------");
+        new Day1Solution2025().runDaySolution();
     }
 }
