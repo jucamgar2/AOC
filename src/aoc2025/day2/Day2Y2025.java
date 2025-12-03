@@ -20,7 +20,7 @@ public class Day2Y2025 {
 
     public static Day2Y2025 getDay2Data(){
         List<String> idRanges = new ArrayList<>();
-        try (BufferedReader br = new BufferedReader(new FileReader("inputs/2025/Day2Data.txt"))) {
+        try (BufferedReader br = new BufferedReader(new FileReader("inputs/2025/TestDay2.txt"))) {
             br.lines().forEach(line->{
                 String[] ranges = line.split(",");
                 for(String range: ranges){
