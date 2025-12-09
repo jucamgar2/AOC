@@ -33,6 +33,7 @@ import aoc2025.day2.Day2Solution2025;
 import aoc2025.day3.Day3Solution2025;
 import aoc2025.day4.Day4Solution2025;
 import aoc2025.day5.Day5Solution2025;
+import aoc2025.day6.Day6Solution2025;
 
 public class App {
     public static void main(String[] args) throws Exception {
@@ -126,5 +127,7 @@ public class App {
         new Day4Solution2025().runDaySolution();
         System.out.println("--------------------------DAY 5--------------------------");
         new Day5Solution2025().runDaySolution();
+        System.out.println("--------------------------DAY 6--------------------------");
+        new Day6Solution2025().runDaySolution();
     }
 }
