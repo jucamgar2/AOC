@@ -45,6 +45,14 @@ public class PositionBoard {
         return possibleNeighbors.stream().filter(pos->pos!=null).toList();
     }
 
+    public int getMaxI(){
+        return this.positions.stream().mapToInt(x->x.getI()).max().orElse(0);
+    }
+
+    public int getMaxJ(){
+        return this.positions.stream().mapToInt(x->x.getJ()).max().orElse(0);
+    }
+
     public static PositionBoard readPositionBoard(String ref){
         List<Position> positions = new ArrayList<>();
         try (BufferedReader br = new BufferedReader(new FileReader(ref))) {
