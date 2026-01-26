@@ -22,7 +22,7 @@ public class Day9Y2025 {
 
     public static Day9Y2025 getDay9Data(){
         List<Position> possibleLocations = new ArrayList<>();
-        try (BufferedReader br = new BufferedReader(new FileReader("inputs/2025/Day9Data.txt"))) {
+        try (BufferedReader br = new BufferedReader(new FileReader("inputs/2025/TestDay9.txt"))) {
             br.lines().forEach(line->{
                 String[] coord = line.trim().split(",");
                 Position newPosition = new Position(Integer.parseInt(coord[0]), Integer.parseInt(coord[1]), "");
