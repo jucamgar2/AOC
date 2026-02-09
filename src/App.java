@@ -30,6 +30,7 @@ import aoc2024.day8.Day8Solution2024;
 import aoc2024.day9.Day9Solution2024;
 import aoc2025.day1.Day1Solution2025;
 import aoc2025.day10.Day10Solution2025;
+import aoc2025.day11.Day11Solution2025;
 import aoc2025.day2.Day2Solution2025;
 import aoc2025.day3.Day3Solution2025;
 import aoc2025.day4.Day4Solution2025;
@@ -141,5 +142,7 @@ public class App {
         new Day9Solution2025().runDaySolution();
         System.out.println("--------------------------DAY 10--------------------------");
         new Day10Solution2025().runDaySolution();
+        System.out.println("--------------------------DAY 11--------------------------");
+        new Day11Solution2025().runDaySolution();
     }
 }

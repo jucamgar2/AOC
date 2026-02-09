@@ -93,5 +93,55 @@ public class Graph {
         return shortestPaths;
     }
 
-}
+    public List<List<Node>> findAllPathsFromTo(Node from, Node to){
+        List<List<Node>> allPaths = new ArrayList<>();
+        List<Node> visited = new ArrayList<>();
+        List<Node> path = new ArrayList<>();
+        dfs(from, to, visited, path, allPaths);
+        return allPaths;
+    }
 
+    private void dfs(Node current, Node end, List<Node> visited, List<Node> path, List<List<Node>> allPaths) {
+        visited.add(current);
+        path.add(current);
+        if(current.equals(end)){
+            allPaths.add(new ArrayList<>(path));
+        }else{
+            for(Edge edge: current.getEdges()){
+                Node neighbor = edge.getTo();
+                if(!visited.contains(neighbor)){
+                    dfs(neighbor, end, visited, path, allPaths);
+                }
+            }
+        }
+        path.remove(current);
+        visited.remove(current);
+    }
+
+    public int countPaths(String start, String end) {
+        if (!nodes.containsKey(start)) {
+            return 0;
+        }
+        Map<String, Integer> cache = new HashMap<>();
+        return dfsCountPaths(start, end, cache);
+    }
+
+    private int dfsCountPaths(String curr, String end, Map<String, Integer> cache) {
+        if (curr.equals(end)) {
+            return 1;
+        }
+        if (cache.containsKey(curr)) {
+            return cache.get(curr);
+        }
+        Node currentNode = nodes.get(curr);
+        int count = 0;
+        if (currentNode != null) {
+            for (Edge edge : currentNode.getEdges()) {
+                count += dfsCountPaths(edge.getTo().getValue(), end, cache);
+            }
+        }
+        cache.put(curr, count);
+        return count;
+    }
+
+}
