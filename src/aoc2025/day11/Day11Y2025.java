@@ -20,7 +20,7 @@ public class Day11Y2025 {
 
     public static Day11Y2025 getDay11Data(){
         Graph graph = new Graph();
-        try (BufferedReader br = new BufferedReader(new FileReader("inputs/2025/Day11Data.txt"))) {
+        try (BufferedReader br = new BufferedReader(new FileReader("inputs/2025/TestDay11.txt"))) {
             br.lines().forEach(line->{
                 String[] edgedString = line.split(":");
                 String from = edgedString[0].trim();

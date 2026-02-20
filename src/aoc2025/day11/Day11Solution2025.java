@@ -14,7 +14,7 @@ public class Day11Solution2025 extends BaseDay{
     public void runDaySolution() {
         Day11Y2025 input = getInputData();
         System.out.println("--------------------------PART1--------------------------");
-        //part1Solution(input);
+        part1Solution(input);
         System.out.println("--------------------------PART2--------------------------");
         part2Solution(input);
     }
