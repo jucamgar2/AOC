@@ -28,7 +28,7 @@ public class Day4Y2023 {
     public static Day4Y2023 readDay4Data(){
         List<List<Integer>> cards = new ArrayList<>();
         List<List<Integer>> winnerNumbers = new ArrayList<>();
-        try (BufferedReader br = new BufferedReader(new FileReader("inputs/2023/Day4Data.txt"))) {
+        try (BufferedReader br = new BufferedReader(new FileReader("inputs/2023/TestDay4.txt"))) {
             br.lines().forEach(line->{
                 String numbers = line.split(": ")[1];
                 String[] cardsArray = numbers.split("\\|")[0].split(" ");
