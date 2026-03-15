@@ -1,4 +1,4 @@
-package aoc2023.dya7;
+package aoc2023.day7;
 
 import java.util.ArrayList;
 import java.util.Comparator;
