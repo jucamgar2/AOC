@@ -6,6 +6,7 @@ import aoc2023.day3.Day3Solution2023;
 import aoc2023.day4.Day4Solution2023;
 import aoc2023.day5.Day5Solution2023;
 import aoc2023.day6.Day6Solution2023;
+import aoc2023.dya7.Day7Solution2023;
 import aoc2024.day1.Day1Solution2024;
 import aoc2024.day10.Day10Solution2024;
 import aoc2024.day11.Day11Solution2024;
@@ -74,6 +75,8 @@ public class App {
         new Day5Solution2023().runDaySolution();
         System.out.println("--------------------------DAY 6--------------------------");
         new Day6Solution2023().runDaySolution();
+        System.out.println("--------------------------DAY 7--------------------------");
+        new Day7Solution2023().runDaySolution();
     }
 
     public static void year2024(){
