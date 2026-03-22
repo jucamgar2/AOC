@@ -17,6 +17,10 @@ public class Graph {
         return nodes.computeIfAbsent(value, Node::new);
     }
 
+    public List<String> getNodeLabels(){
+        return nodes.values().stream().map(Node::getValue).toList();
+    }
+
     public void addEdge(String from, String to, String label) {
         Node n1 = addNode(from);
         Node n2 = addNode(to);
