@@ -15,6 +15,10 @@ public class Node {
         return value;
     }
 
+    public void setValue(String value){
+        this.value = value;
+    }
+
     public void addEdge(Node destination, String label) {
         edges.add(new Edge(this, destination, label));
     }
