@@ -53,6 +53,14 @@ public class PositionBoard {
         return this.positions.stream().mapToInt(x->x.getJ()).max().orElse(0);
     }
 
+    public List<String> getPositionsInI(int i){
+        return this.positions.stream().filter(x->x.getI()==i).map(Position::getValue).toList();
+    }
+
+    public List<String> getPositionsInJ(int j){
+        return this.positions.stream().filter(x->x.getJ()==j).map(Position::getValue).toList();
+    }
+
     public static PositionBoard readPositionBoard(String ref){
         List<Position> positions = new ArrayList<>();
         try (BufferedReader br = new BufferedReader(new FileReader(ref))) {
