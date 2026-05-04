@@ -76,4 +76,33 @@ public class PositionBoard {
         }
         return new PositionBoard(positions);
     }
+
+    public List<String> getLine(int i){
+        return this.positions.stream().filter(pos->pos.getI()==i).map(Position::getValue).toList();
+    }
+
+    public List<String> getColumn(int j){
+        return this.positions.stream().filter(pos->pos.getJ()==j).map(Position::getValue).toList();
+    }
+
+    public String toString(){
+        StringBuilder sb = new StringBuilder();
+
+        int maxI = getMaxI();
+        int maxJ = getMaxJ();
+
+        for (int i = 0; i <= maxI; i++) {
+            for (int j = 0; j <= maxJ; j++) {
+                Position p = getPosition(i, j);
+                if (p != null) {
+                    sb.append(p.getValue());
+                }
+            }
+            if (i < maxI) {
+                sb.append("\n");
+            }
+        }
+
+        return sb.toString();
+    }
 }
