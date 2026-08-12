@@ -45,6 +45,21 @@ public class PositionBoard {
         return possibleNeighbors.stream().filter(pos->pos!=null).toList();
     }
 
+    public List<Position> getFourNeighbors(Position p){
+        int i = p.getI();
+        int j = p.getJ();
+        List<Position> possibleNeighbors = new ArrayList<>();
+        Position up = getPosition(i-1, j);
+        Position down = getPosition(i+1, j);
+        Position left = getPosition(i, j-1);
+        Position right = getPosition(i, j+1);
+        possibleNeighbors.add(left);
+        possibleNeighbors.add(down);
+        possibleNeighbors.add(right);
+        possibleNeighbors.add(up);
+        return possibleNeighbors.stream().filter(pos->pos!=null).toList();
+    }
+
     public int getMaxI(){
         return this.positions.stream().mapToInt(x->x.getI()).max().orElse(0);
     }
