@@ -27,7 +27,7 @@ public class Day21Solution2023 extends BaseDay{
 
     @Override
     protected void part1Solution(Object input) {
-        System.out.println("Solución: " + getPlotsToReach((Day21Y2023) input, 64));
+        System.out.println("Solución: " + getPlotsToReach((Day21Y2023) input, 6));
     }
 
     private int getPlotsToReach(Day21Y2023 input, int steps) {
@@ -55,11 +55,11 @@ public class Day21Solution2023 extends BaseDay{
     }
 
     private Long getPlotsWithInfiniteMap(Day21Y2023 input) {
-        long y0 = getPlotsToReachWithInfMap(input, 65);
+        long y0 = getPlotsToReachWithInfMap(input, 7);
         System.out.println("65");
-        long y1 = getPlotsToReachWithInfMap(input, 196);
+        long y1 = getPlotsToReachWithInfMap(input, 13);
         System.out.println("196");
-        long y2 = getPlotsToReachWithInfMap(input, 327);
+        long y2 = getPlotsToReachWithInfMap(input, 19);
 
         long x = (26_501_365L - 65) / 131;
 

@@ -20,7 +20,7 @@ public class Day21Y2024 {
 
     public static Day21Y2024 getDay21Data(){
         List<String> codes = new ArrayList<>();
-        try (BufferedReader br = new BufferedReader(new FileReader("inputs/2024/Day21Data.txt"))) {
+        try (BufferedReader br = new BufferedReader(new FileReader("inputs/2024/TestDay21.txt"))) {
             br.lines().forEach(line->{
                 codes.add(line);
             });
